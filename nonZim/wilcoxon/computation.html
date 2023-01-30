@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta content="text/html; charset=ISO-8859-1"
+ http-equiv="content-type">
+  <title>www.Ranklets.net</title>
+  <link rel="stylesheet" type="text/css" href='../../_resources/RkletWebSite.css'>
+</head>
+<body>
+<div style="text-align: justify;">
+<h2>Ranklets and the
+Wilcoxon rank-sum test</h2>
+The <em>efficient computation</em> of
+ranklets
+is based on their relation to the <em>Wilcoxon rank-sum
+test</em> (also known as the <em>Mann-Whitney U-test</em>).<br>
+<br>
+We recall that the value of a ranklet <i>R</i><sub>j</sub> is 
+defined as  the
+number of pairs <i>(x,y)</i> in <b>C</b>x<b>T</b> such that
+<i>y&gt;x</i>, that is<br>
+<br>
+<div style="text-align: center;"><img
+ style="border: 1px solid ; width: 512px; height: 61px;"
+ alt="defitinion of ranklets" src="definition.jpg"><br>
+<br>
+</div>
+where the <b>T</b> and <b>C</b> sets are arranged as in<br>
+<div style="text-align: center;"><img src="tandc.jpg"
+ alt="the T and C sets" style="width: 141px; height: 133px;"><br>
+</div>
+<br>
+If we now identify the <b>T</b> and <b>C</b> sets with
+the sets of <em>"Treatment"</em>
+and <em>"Control"</em>
+observations of the <em>Wilcoxon test</em>,
+it is easy to see that<br>
+<div style="text-align: center;"><img vspace="10"
+ style="width: 332px; height: 98px;" alt="The mann-whitney statistics"
+ src="mannwhitney.jpg"><br>
+</div>
+where <i>n</i> is the number of pixels
+in the <b>T</b> set (a constant for a given scale level). 
+The <em>Wilcoxon statistics</em> <i>W<sub>s</sub></i> is
+defined as the sum of the ranks of all the observations (pixels) in the
+"Treatment" set. <i>W<sub>xy</sub></i> is known as
+the
+<em>Mann-Whitney</em> statistics, and is equivalent to
+<i>W<sub>s</sub></i>.<br>
+<br>
+Therefore, in order to compute a ranklet <i>R<sub>j</sub></i>, there is 
+<em>no need to construct the <i>(n x n)</i> pairs in
+<b>C</b>x<b>T</b> explicitly</em>.
+It is enough to<br>
+<ul>
+  <li><em>sort</em> all the pixels in <b>C</b>U<b>T</b>
+in order of increasing intensity<br>
+  </li>
+  <li><em>sum the ranks</em> of the pixels in the <b>T</b>
+set</li>
+  <li>subtract the constant <i>1/2 n (n+1)</i></li>
+</ul>
+In conclusion, choosing a suitable sorting algorithm, ranklets
+can be computed with complexity as low as <i>O(N<sup>1/2</sup>+k)</i>.
+Details are reported in this 
+<a href="http://www.eecs.qmul.ac.uk/~fabri/Publications/Fast_algorithms_for_the_computation_of_Ranklets.html">paper</a>.
+<br>
+<br>
+<hr style="width: 100%; height: 2px;">
+<table style="text-align: left; width: 100%;" border="0" cellspacing="2"
+ cellpadding="2">
+  <tbody>
+    <tr>
+      <td style="vertical-align: top;"><a href="http://www.ranklets.net">www.Ranklets.net</a>
+      <br></td>
+      <td
+ style="vertical-align: top; text-align: right; font-style: italic;">F.
+Smeraldi, June 2004 (Revised Sept 2012)<br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br>
+</div>
+<br>
+<br>
+</body>
+</html>

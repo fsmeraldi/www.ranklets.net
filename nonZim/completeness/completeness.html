@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta http-equiv="content-type"
+ content="text/html; charset=ISO-8859-1">
+  <title>www.Ranklets.net</title>
+  <link rel="stylesheet" type="text/css" href='../../_resources/RkletWebSite.css'>
+</head>
+<body>
+<h2>Completeness</h2>
+<br>
+Completeness is a concept we normally associate with, say, wavelets 
+rather than with rank
+features. An image
+representation
+is complete if it encodes enough information to allow one to
+reconstruct
+the original image.<br>
+<br>
+Clearly, <em>reconstruction is not
+possible in the case of rank features</em>,
+since the pixel intensity values are discarded after the
+ranking, and only rank information is preserved.
+However, we can redefine our notion of completeness as follows:<br>
+<br>
+<b>Definition: <em>A set of rank features is complete if
+knowledge of the features uniquely specifies the ranking of the pixels
+in the original image.</em></b><br>
+<br>
+Note that this requirement is<br>
+<ul>
+  <li><em>maximal:</em> the ranking of the original
+image is all the information
+than rank features can possibly encode;</li>
+  <li><em>non-trivial:</em>
+rank features are normally computed by sorting <em>local</em> image 
+neighbouhoods, and it
+is in general not clear how the local rankings combine to allow
+comparisons between the intensity of distant pixels.</li>
+</ul>
+<div style="text-align: left;"><img align="left"
+ style="width: 198px; height: 170px;"
+ alt="A complete set of ranklets in 1 dimension" src="oned.jpg">It can
+be proved that <b><em>ranklets
+constitute a complete set
+of rank features.</em></b><br>
+<br>
+The image to the left represents a <em>complete set</em>
+of ranklets for a
+one-dimensional, eight-pixel image. The notation is in analogy with
+Haar wavelets: the upper part of each step represents the <b>T</b> set, 
+with the lower part corresponding to the <b>C</b> set. The dashed line 
+indicates <em>"infinity padding"</em>, in which we deal
+with the border conditions by assuming that the missing pixels have an
+infinite value.<br>
+<br>
+A detailed treatment of complete sets of ranklets in one and two
+dimensions can be found in this <a target="_blank"
+ href="http://www.eecs.qmul.ac.uk/~fabri/Publications/Ranklets_a_Complete_Family_of_Multiscale%2C_Orientation_Selective_Rank_Features.html">research
+report</a>.<br>
+<br>
+<br>
+<hr style="width: 100%; height: 2px;">
+<table style="text-align: left; width: 100%;" border="0" cellspacing="2"
+ cellpadding="2">
+  <tbody>
+    <tr>
+      <td style="vertical-align: top;"><a href="www.Ranklets.net">www.Ranklets.net</a><br></td>
+      <td
+ style="vertical-align: top; text-align: right; font-style: italic;">F.
+Smeraldi, June 2004<br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br>
+</div>
+</body>
+</html>

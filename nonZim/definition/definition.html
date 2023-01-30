@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta content="text/html; charset=ISO-8859-1"
+ http-equiv="content-type">
+  <title>www.Ranklets.net</title>
+
+  <link rel="stylesheet" type="text/css" href='../../_resources/RkletWebSite.css'>
+</head>
+<body>
+<h2>Definition of Ranklets</h2>
+
+Ranklets are designed starting from the three <b><em>Haar wavelets</em></b>
+below,<br>
+<br>
+<br>
+<div style="text-align: center;"><img
+ style="width: 580px; height: 157px;"
+ alt="Haar wavelets, the C and T sets" src="haar.jpg"><br>
+</div>
+<br>
+<br>
+where the <b>T</b>
+and <b>C</b>
+sets are given by<br>
+<br>
+<div style="text-align: center;"><img
+ style="width: 324px; height: 130px;"
+ alt="Definition of the T and C sets" src="tandcsets.jpg"><br>
+<div style="text-align: justify;"><br>
+(here, <b><em>s</em></b>
+is the <em>scaling
+parameter</em> familiar from wavelet theory).<br>
+<br>
+Ranklets are best understood intuitively in terms of 
+<em><b>pairwise comparisons</em></b>
+of pixel
+intensity values:<br>
+<br>
+<div style="text-align: center;"><img
+ style="width: 578px; height: 130px;" alt="Definition of ranklets"
+ src="definition.jpg"><br>
+<br>
+</div>
+That is, in order to compute <i>R</i><sub>1</sub> you should
+construct all the possible pairs of one pixel in 
+<b>C</b><sub>1</sub> and one pixel in
+<b>T</b><sub>1</sub>, and <em>count</em> in how
+many such pairs the second pixel is brighter that
+the first.<br>
+<br>
+However, <em>the
+counting does not need to be carried out explicitly</em>: a more
+efficient
+algorithm exploits the relation of ranklets to the 
+<b><em>Wilcoxon rank-sum test</em></b>.
+<br>
+<br>
+<hr style="width: 100%; height: 2px;">
+<table style="text-align: left; width: 100%;" border="0" cellspacing="2"
+ cellpadding="2">
+  <tbody>
+    <tr>
+      <td style="vertical-align: top;"><a href="http://www.ranklets.net">www.Ranklets.net</a></td>
+      <td
+ style="vertical-align: top; text-align: right; font-style: italic;">F.
+Smeraldi, June 2004</td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<br>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta content="text/html; charset=ISO-8859-1"
+ http-equiv="content-type">
+  <title>www.Ranklets.net</title>
+  <link rel="stylesheet" type="text/css" href='../../_resources/RkletWebSite.css'>
+</head>
+<body>
+<div style="text-align: center;">
+<h2>Orientation selectivity</h2>
+<br>
+<div style="text-align: justify;">Ranklets share the same <em>orientation
+selectivity</em> pattern as <em>Haar wavelets</em>.
+<br>
+<br>
+This is intuitively evident if we remember that a ranklet essentially 
+<em>counts</em> in how
+many of the pairs in <b>T</b>x<b>C</b> the pixel
+from the <b>T</b> set is brighter than the one from
+the <b>C</b>
+set. So, for example, <br>
+<br>
+<ul>
+  <li>This ranklet straddles a vertical dark-to-bright edge. Most
+pixels in the <b>T</b>
+set are
+brighter than those in the <b>C</b>
+set, which will result in a <em>large count</em> (positive
+edge response)<br>
+  </li>
+</ul>
+<div style="text-align: center;"><img
+ style="width: 208px; height: 260px;"
+ alt="orientation selectivity example 1" src="large.jpg"><br>
+</div>
+<br>
+<br>
+<ul>
+  <li>If the edge is inverted, most pixels in the <b>C</b> set are
+brighter
+than those in the <b>T</b> set, which
+results in a <em>low count</em>
+(negative edge response)<br>
+  </li>
+</ul>
+<div style="text-align: center;"><img
+ style="width: 204px; height: 268px;"
+ alt="orientation selectivity example 2" src="small.jpg"><br>
+<br>
+<ul style="text-align: justify;">
+  <li>In this case, the edge does not match the orientation tuning of
+this ranklet. Pixel brightness is uniformly distributed across the 
+<b>T</b> and <b>C</b> sets, leading to an <em>average count</em>
+(null response)<br>
+  </li>
+</ul>
+</div>
+</div>
+<img style="width: 256px; height: 216px;"
+ alt="orientation selectivity example 3" src="avg.jpg"><br>
+<div style="text-align: justify;"><br>
+Thus, this ranklet responds to <em>vertical structures</em>
+in the image. In the
+same way, the other two ranklets respond to <em>horizontal edges</em>
+and <em>diagonal lines</em>
+(or corners) respectively.<br>
+<br>
+With an appropriate <em>normalization</em>,
+it is easy to map the
+responses to the [-1,+1] range, so that a null response will in fact
+correspond to a zero.<br>
+<br>
+<hr style="width: 100%; height: 2px;">
+<table style="text-align: left; width: 100%;" border="0" cellspacing="2"
+ cellpadding="2">
+  <tbody>
+    <tr>
+      <td style="vertical-align: top;"><a href="http://www.ranklets.net">www.Ranklets.net</a></td>
+      <td
+ style="vertical-align: top; text-align: right; font-style: italic;">F.
+Smeraldi, June 2004</td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<br>
+</div>
+</div>
+</body>
+</html>
